@@ -1,0 +1,69 @@
+@use 'colors.scss' as *;
+@use 'components.scss' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 66.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+main {
+	background-color: $black;
+}
+.top {
+	background-image: url(./mountain-8120620_1920.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+.nav {
+	padding-top: 2em;
+    .wrapper{
+        justify-content: space-between;
+    }
+	&__logo {
+		font-size: 4rem;
+		color: $white;
+		span {
+			color: $black;
+		}
+	}
+	&__wrap {
+		&-list {
+			display: flex;
+			list-style: none;
+		}
+		&-item {
+			padding-left: 1em;
+			font-size: 2rem;
+			text-transform: uppercase;
+			a {
+				color: $white;
+				text-decoration: none;
+				transition: color 0.3s;
+				&:hover {
+					color: $gray;
+				}
+			}
+		}
+	}
+}
+.about{
+    .wrapper{
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__text{
+        margin-top: 2em;
+        text-align: center;
+        font-size: 2.4rem;
+        color: $gray;
+    }
+}
+.location{
+    .wrapper{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
