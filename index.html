@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous"></script>
   <title>Vite App</title>
 </head>
 
@@ -20,8 +21,8 @@
         <div class="nav__wrap">
           <ul class="nav__wrap-list">
             <li class="nav__wrap-item"><a href="#">home</a></li>
-            <li class="nav__wrap-item"><a href="#">lokalizacja</a></li>
-            <li class="nav__wrap-item"><a href="#">galeria</a></li>
+            <li class="nav__wrap-item"><a href="#location">lokalizacja</a></li>
+            <li class="nav__wrap-item"><a href="#gallery">galeria</a></li>
           </ul>
         </div>
       </div>
@@ -35,30 +36,51 @@
           <h2 class="section-header__title">Beskidy</h2>
         </div>
         <p class="about__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo lobortis posuere. Aliquam volutpat vehicula sapien, non lobortis libero mollis vitae. Donec facilisis quam mi, sit amet ullamcorper justo interdum nec. Ut eu pellentesque neque. Nam fringilla pretium neque, sit amet semper neque. Etiam id odio at quam pulvinar auctor. Etiam eget tellus nisi. Nam vel dui ac neque fringilla dictum. Nullam vitae nulla nec eros consequat tristique.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo lobortis posuere. Aliquam volutpat
+          vehicula sapien, non lobortis libero mollis vitae. Donec facilisis quam mi, sit amet ullamcorper justo
+          interdum nec. Ut eu pellentesque neque. Nam fringilla pretium neque, sit amet semper neque. Etiam id odio at
+          quam pulvinar auctor. Etiam eget tellus nisi. Nam vel dui ac neque fringilla dictum. Nullam vitae nulla nec
+          eros consequat tristique.
         </p>
         <p class="about__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo lobortis posuere. Aliquam volutpat vehicula sapien, non lobortis libero mollis vitae. Donec facilisis quam mi, sit amet ullamcorper justo interdum nec. Ut eu pellentesque neque. Nam fringilla pretium neque, sit amet semper neque. Etiam id odio at quam pulvinar auctor. Etiam eget tellus nisi. Nam vel dui ac neque fringilla dictum. Nullam vitae nulla nec eros consequat tristique.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo lobortis posuere. Aliquam volutpat
+          vehicula sapien, non lobortis libero mollis vitae. Donec facilisis quam mi, sit amet ullamcorper justo
+          interdum nec. Ut eu pellentesque neque. Nam fringilla pretium neque, sit amet semper neque. Etiam id odio at
+          quam pulvinar auctor. Etiam eget tellus nisi. Nam vel dui ac neque fringilla dictum. Nullam vitae nulla nec
+          eros consequat tristique.
         </p>
+        <div class="about__wrap">
+          <div class="about__wrap-img">
+            <img src="./img/mountains-3779403_640.jpg" alt="">
+          </div>
+          <ul class="about__wrap-list">
+            <li>1. Lorem ipsum</li>
+            <li>2. Lorem ipsum</li>
+            <li>3. Lorem ipsum</li>
+            <li>4. Lorem ipsum</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="location section">
+    <section class="location section" id="location">
       <div class="wrapper">
         <div class="section-header">
           <p class="section-header__description">Góry Polskie</p>
           <h2 class="section-header__title">Lokalizacja</h2>
         </div>
         <div class="location__wrap">
-          <div class="location__text">
-            <p class="location__text-item"></p>
-          </div>
-          <div class="location__image">
-            <img src="" alt="" class="location__image-item">
+            <p class="location__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo lobortis posuere. Aliquam volutpat
+              vehicula sapien, non lobortis libero mollis vitae. Donec facilisis quam mi, sit amet ullamcorper justo
+              interdum nec. Ut eu pellentesque neque. Nam fringilla pretium neque, sit amet semper neque. Etiam id odio at
+              quam pulvinar auctor. Etiam eget tellus nisi. Nam vel dui ac neque fringilla dictum. Nullam vitae nulla nec
+              eros consequat tristique.</p>
+          <div class="location__img">
+            <img src="./img/polska.jpg" alt="" class="location__image-item">
           </div>
         </div>
       </div>
     </section>
-    <section class="gallery section">
+    <section class="gallery section" id="gallery">
       <div class="wrapper">
         <div class="section-header">
           <p class="section-header__description">Zachwycające panoramy</p>
@@ -71,7 +93,7 @@
   <footer class="footer">
 
   </footer>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>

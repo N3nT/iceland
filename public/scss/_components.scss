@@ -1,26 +1,28 @@
 @use 'colors.scss' as *;
 .wrapper {
 	display: flex;
+    justify-content: center;
 	align-items: center;
+    flex-direction: column;
 	width: 1200px;
 	margin: 0 auto;
 }
-.section{
-    padding: 5em 0;
+.section {
+	padding: 5em 0;
 }
-.section-title{
-    color: $white;
+.section-title {
+	color: $white;
 }
-.section-header{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    &__description{
-        color: $gray;
-        font-size: 1.6rem;
-    }
-    &__title{
-        color: $white;
-        font-size: 4.8rem;
-    }
+.section-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	&__description {
+		color: $gray;
+		font-size: 1.6rem;
+	}
+	&__title {
+		color: $white;
+		font-size: 4.8rem;
+	}
 }

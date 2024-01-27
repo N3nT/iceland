@@ -8,6 +8,7 @@
 html {
 	font-size: 66.5%;
 	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 main {
 	background-color: $black;
@@ -21,6 +22,7 @@ main {
 	padding-top: 2em;
     .wrapper{
         justify-content: space-between;
+		flex-direction: row;
     }
 	&__logo {
 		font-size: 4rem;
@@ -50,20 +52,60 @@ main {
 	}
 }
 .about{
-    .wrapper{
-        justify-content: center;
-        flex-direction: column;
-    }
     &__text{
         margin-top: 2em;
         text-align: center;
         font-size: 2.4rem;
         color: $gray;
     }
+	&__wrap{
+		display: flex;
+		margin-top: 10em;
+		width: 100%;
+		&-img{
+			width: 50%;
+			img{
+				width: 100%;
+				border-radius: 18px;
+			}
+		}
+		&-list{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 2em;
+			width: 50%;
+			font-size: 2rem;
+			color: $gray;
+			text-align: center;
+			li{
+				padding: 1em;
+				&:first-child::marker{
+					content: url(../img/rectangle.jpg);
+				}
+				&::marker{
+					content: url(../img/rectangle_active.jpg);
+				}
+			}
+		}
+	}
 }
 .location{
-    .wrapper{
-        justify-content: center;
-        flex-direction: column;
-    }
+	&__wrap{
+		display: flex;
+		margin-top: 2em;
+	}
+	&__text{
+		padding: 2em;
+		width: 50%;
+		font-size: 2rem;
+		color: $gray;
+		text-align: center;
+	}
+	&__img{
+		width: 50%;
+		img{
+			width: 100%;
+		}
+	}
 }
