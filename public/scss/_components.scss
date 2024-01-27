@@ -26,3 +26,8 @@
 		font-size: 4.8rem;
 	}
 }
+.gradient{
+    background: linear-gradient(180deg, $black 0%, $accent-two 50%);
+    height: 100px;
+    width: 100%;
+}
