@@ -64,10 +64,8 @@ main {
 		width: 100%;
 		&-img {
 			width: 50%;
-			img {
-				width: 100%;
-				border-radius: 18px;
-			}
+			height: 335px;
+			border-radius: 18px;
 		}
 		&-list {
 			display: flex;
@@ -76,15 +74,13 @@ main {
 			padding-left: 2em;
 			width: 50%;
 			font-size: 2rem;
-			color: $gray;
 			text-align: center;
-			li {
+			&-item {
 				padding: 1em;
-				&:first-child::marker {
-					content: url(../img/rectangle.jpg);
-				}
-				&::marker {
-					content: url(../img/rectangle_active.jpg);
+				transition: color 0.3s;
+				cursor: pointer;
+				&:hover {
+					color: $white;
 				}
 			}
 		}
@@ -169,7 +165,7 @@ main {
 				font-size: 2rem;
 				color: $white;
 			}
-			p{
+			p {
 				font-size: 1.2rem;
 				color: $gray;
 			}

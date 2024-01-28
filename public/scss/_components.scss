@@ -31,3 +31,15 @@
     height: 100px;
     width: 100%;
 }
+.about-li{
+	color: $gray;
+	&::marker {
+		content: url(../img/rectangle.jpg);
+	}
+}
+.about-li--active{
+	color: $white;
+	&::marker{
+		content: url(../img/rectangle_active.jpg);
+	}
+}
