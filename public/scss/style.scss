@@ -1,5 +1,7 @@
 @use 'colors.scss' as *;
 @use 'components.scss' as *;
+@use 'numbers.scss' as *;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -19,13 +21,13 @@ main {
 	height: 100vh;
 }
 .nav {
-	padding-top: 2em;
+	padding-top: $nav_pad_top;
 	.wrapper {
 		justify-content: space-between;
 		flex-direction: row;
 	}
 	&__logo {
-		font-size: 4rem;
+		font-size: $f2;
 		color: $white;
 		span {
 			color: $black;
@@ -37,8 +39,8 @@ main {
 			list-style: none;
 		}
 		&-item {
-			padding-left: 1em;
-			font-size: 2rem;
+			padding-left: $nav-wrap-item-pleft;
+			font-size: $f4;
 			text-transform: uppercase;
 			a {
 				color: $white;
@@ -53,30 +55,30 @@ main {
 }
 .about {
 	&__text {
-		margin-top: 2em;
+		margin-top: $about-text-mtop;
 		text-align: center;
-		font-size: 2.4rem;
+		font-size: $f3;
 		color: $gray;
 	}
 	&__wrap {
 		display: flex;
-		margin-top: 10em;
-		width: 100%;
+		margin-top: $about-wrap-mtop;
+		width: $about-wrap-width;
 		&-img {
-			width: 50%;
-			height: 335px;
-			border-radius: 18px;
+			width: $about-img-width;
+			height: $about-img-height;
+			border-radius: $b-radius;
 		}
 		&-list {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding-left: 2em;
-			width: 50%;
-			font-size: 2rem;
+			padding-left: $about-wrap-list-pleft;
+			width: $about-wrap-list-width;
+			font-size: $f4;
 			text-align: center;
 			&-item {
-				padding: 1em;
+				padding: $about-wrap-list-item-p;
 				transition: color 0.3s;
 				cursor: pointer;
 				&:hover {
@@ -89,58 +91,58 @@ main {
 .location {
 	&__wrap {
 		display: flex;
-		margin-top: 2em;
+		margin-top: $location-wrap-mtop;
 	}
 	&__text {
-		padding: 2em;
-		width: 50%;
-		font-size: 2rem;
+		padding: $location-text-p;
+		width: $location-text-width;
+		font-size: $f4;
 		color: $gray;
 		text-align: center;
 	}
 	&__img {
-		width: 50%;
+		width: $location-img-width;
 		img {
-			width: 100%;
+			width: $location-img-img-width;
 		}
 	}
 }
 .gallery {
-	height: 900px;
+	height: $gallery-height;
 	.fa-solid {
 		color: $white;
 	}
 	&__wrap {
 		display: flex;
 		position: relative;
-		margin-top: 2em;
-		width: 100%;
+		margin-top: $gallery-wrap-mtop;
+		width: $gallery-wrap-width;
 		align-items: center;
 		justify-content: space-between;
 		&-mid {
-			width: 800px;
+			width: $gallery-wrap-mid-width;
 			border: 1px solid $gray;
-			border-radius: 18px;
+			border-radius: $b-radius;
 			z-index: 2;
 		}
 		&-left,
 		&-right {
-			font-size: 5rem;
+			font-size: $f1;
 		}
 		&-asideleft,
 		&-asideright {
 			position: absolute;
-			width: 400px;
+			width: $aside-width;
 			z-index: 1;
 			border: 1px solid $gray;
 		}
 		&-asideleft {
-			top: 400px;
-			left: 900px;
+			top: $aside-top-px;
+			left: $aside-left-left
 		}
 		&-asideright {
-			top: 400px;
-			left: -100px;
+			top: $aside-top-px;
+			left: $aside-right-left;
 		}
 	}
 }
@@ -149,24 +151,24 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 200px;
+	height: $footer-height;
 	background-color: $accent-two;
 	&__wrap {
 		display: flex;
-		width: 100%;
+		width: $footer-wrap-width;
 		justify-content: space-between;
 		&-mid {
 			display: flex;
 			flex-direction: column;
-			padding: 0 3em;
+			padding: $footer-wrap-mid-padding;
 			align-items: center;
 			justify-content: center;
 			h3 {
-				font-size: 2rem;
+				font-size: $f4;
 				color: $white;
 			}
 			p {
-				font-size: 1.2rem;
+				font-size: $f6;
 				color: $gray;
 			}
 		}
@@ -176,8 +178,8 @@ main {
 			list-style: none;
 			color: $gray;
 			li {
-				padding: 2em;
-				font-size: 1.6rem;
+				padding: $footer-wrap-li-padding;
+				font-size: $f5;
 				// &:first-child,&:last-child{
 				// 	padding: 0;
 				// }
@@ -187,6 +189,6 @@ main {
 	&__text {
 		color: $gray;
 		text-align: center;
-		font-size: 1.2rem;
+		font-size: $f6;
 	}
 }
