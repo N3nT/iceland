@@ -121,6 +121,7 @@ main {
 		justify-content: space-between;
 		&-mid {
 			width: $gallery-wrap-mid-width;
+			height: $gallery-wrap-mid-height;
 			border: 1px solid $gray;
 			border-radius: $b-radius;
 			z-index: 2;
@@ -133,12 +134,14 @@ main {
 		&-asideright {
 			position: absolute;
 			width: $aside-width;
+			height: $aside-height;
 			z-index: 1;
 			border: 1px solid $gray;
 		}
 		&-asideleft {
 			top: $aside-top-px;
 			left: $aside-left-left
+			
 		}
 		&-asideright {
 			top: $aside-top-px;
