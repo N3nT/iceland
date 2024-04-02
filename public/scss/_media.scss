@@ -1,0 +1,60 @@
+@use 'numbers.scss' as *;
+
+@mixin media-375px{
+    //components
+    .wrapper{
+        width: 375px;
+    }
+    
+    //main
+    .top{
+        background-image: url(./img/mountain-8120620_1920.jpg);
+        background-position: center;
+    }
+    .nav{
+        .wrapper{
+            justify-content: space-around;
+            padding: 0 0.5em;
+        }
+        &__logo{
+            font-size: $f3;
+        }
+        &__wrap{
+            &-item{
+                font-size: $f6;
+            }
+        }
+    }
+    .about{
+        &__text {
+            text-align: center;
+            font-size: $f5;
+            padding: 1em;
+        }
+        &__wrap{
+            margin-top: 5em;
+            &-img{
+                width: 100%;
+                padding: 1em;
+            }
+            &-list{
+                display: none;
+            }
+        }
+    }
+    .location{
+        &__wrap{
+            flex-direction: column-reverse;
+            padding: 1em;
+        }
+        &__text{
+            width: 100%;
+            padding: 0;
+            margin-top: 3em;
+        }
+        &__img{
+            width: 100%;
+            margin-top: 2em;
+        }
+    }
+}
