@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous"></script>
   <title>BeskidTravel | Odkryj Beskid Śląski</title>
 </head>
@@ -20,7 +21,7 @@
         </div>
         <div class="nav__wrap">
           <ul class="nav__wrap-list">
-            <li class="nav__wrap-item"><a href="#">home</a></li>
+            <li class="nav__wrap-item"><a href="#home">home</a></li>
             <li class="nav__wrap-item"><a href="#location">lokalizacja</a></li>
             <li class="nav__wrap-item"><a href="#gallery">galeria</a></li>
           </ul>
@@ -32,7 +33,7 @@
     <section class="about section">
       <div class="wrapper">
         <div class="section-header">
-          <p class="section-header__description">Stolica natury</p>
+          <p class="section-header__description" id="home">Stolica natury</p>
           <h2 class="section-header__title">Beskidy</h2>
         </div>
         <p class="about__text">
@@ -85,6 +86,13 @@
           <p class="section-header__description">Zachwycające panoramy</p>
           <h2 class="section-header__title">Galeria</h2>
         </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="swiper-slide-img" src="./img/mountains-100367_1280.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-slide-img" src="./img/forest-6754057_1280.jpg"></div>
+            <div class="swiper-slide"><img class="swiper-slide-img" src="./img/hintersee-3601004_1280.jpg"></div>
+          </div>
+        </div>
         <div class="gallery__wrap">
           <div class="gallery__wrap-left"><i class="fa-solid fa-arrow-left"></i></div>
           <img class="gallery__wrap-mid" src="./img/mountains-100367_1280.jpg">
@@ -104,18 +112,20 @@
           <li>Facebook</li>
           <li>Twitter</li>
         </ul>
-      <div class="footer__wrap-mid">
-        <h3>BeskidTravel</h3>
-        <p>2024 | BeskidTravel</p>
-      </div>
+        <div class="footer__wrap-mid">
+          <h3>BeskidTravel</h3>
+          <p>2024 | BeskidTravel</p>
+        </div>
         <ul class="footer__wrap-right">
           <li>Home</li>
           <li>Lokalizacja</li>
           <li>Galeria</li>
         </ul>
-    </div>
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="./swiper.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
 
