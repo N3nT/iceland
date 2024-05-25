@@ -32,7 +32,6 @@ main {
 	background-color: $black;
 }
 .top {
-	background-image: url(./img/mountain-8120620_1920.jpg);
 	background-size: cover;
 	height: 100vh;
 }
@@ -223,4 +222,7 @@ main {
 }
 @media screen and (min-width: 992px){
 	@include media-992px;
+}
+@media screen and (min-width: 1200px){
+	@include media-1200px;
 }

@@ -138,6 +138,9 @@
 	.wrapper{
 		width: 992px;
 	}
+	.top{
+		background-size: cover;
+	}
 	.about{
 		&__wrap{
 			&-img{
@@ -162,5 +165,56 @@
 				order: 1;
 			}
 		}
+	}
+}
+@mixin media-1200px{
+	.wrapper{
+		width: 1200px;
+	}
+	.nav{
+		&__logo{
+			font-size: $f2;
+		}
+		&__wrap{
+			&-item{
+				font-size: $f4;
+			}
+		}
+	}
+	.about{
+		&__wrap{
+			&-img {
+				width: $about-img-width;
+				height: $about-img-height;
+				border-radius: $b-radius;
+			}
+			&-list {
+				display: flex;
+			}
+		}
+	}
+	.location{
+		&__wrap{
+			flex-direction: row;
+		}
+		&__text {
+			padding: $location-text-p;
+			width: $location-text-width;
+			font-size: $f4;
+			text-align: center;
+		}
+		&__img {
+			width: $location-img-width;
+			img {
+				width: $location-img-img-width;
+			}
+		}
+	}
+	.gallery{
+		height: 700px;
+	}
+	.swiper{
+		width: 800px;
+		height: 500px;
 	}
 }
